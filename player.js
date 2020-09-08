@@ -1,7 +1,7 @@
 
 
   $(window).on('shown.bs.modal', function(e) { 
-    if( $('#playlistModal').is( e.relatedTarget ) ) { 
+    if( $('#playlistModal').is( e.target ) ) {
         $('#playlistModal').modal('show');
         var songNames = ["Talk by Disclosure and Khalid", "Shea Butter Baby (feat. J. Cole) by Ari Lennox", "Beige by Terrace Martin",
                         "Come Through and Chill (feat. J. Cole) by Miguel", "Bonafide (feat. John Paul) by Kuri Ken", "Teenage Fantasy by Jorja Smith",
@@ -14,7 +14,7 @@
         var elm = 1; var Player = document.getElementById('fullPlaylist');
         var trackName = document.getElementById("trackName");
         Player.onended = function(){
-            if(++(elm) < length){         
+            if(++(elm) < length){       
                 Player.src = "Songs/" + (elm) + ".mp3"; Player.play();
                 trackName.innerHTML = songNames[elm-1];
             } 
