@@ -16,6 +16,23 @@
    text-align: center;
 }
 
+.coverArtImage {
+  width: 500px; 
+  height:500px;
+   background-color: #eed;
+   box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+   -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+   -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.6); 
+   -o-box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+   text-align: center;
+   margin-top: auto;
+  margin-bottom: auto;
+}
+
+#valAudio {
+  padding-top: 20px;
+}
+
 #loginForm{
   margin-top: auto;
   margin-bottom: auto;
