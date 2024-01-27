@@ -4,6 +4,57 @@
 
 }
 
+.con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.lyrics-container {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.lyrics-line {
+  display: block;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.lyrics-line:hover {
+  background-color: #ede5e5; /* Change the background color on hover */
+}
+
+.tooltiptext {
+  display: none;
+  position: fixed;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+  z-index: 1;
+  max-width: 20%;
+}
+
+.heart {
+  color: red;
+  position: absolute;
+  animation: fallAndRotate 10s linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes fallAndRotate {
+  0% {
+    transform: translateY(-100%) rotate(0);
+  }
+  100% {
+    transform: translateY(4000px) rotate(720deg);
+  }
+}
+
 .profileImage {
   border-radius: 50%; 
   width: 300px; 
